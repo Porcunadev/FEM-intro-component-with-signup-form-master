@@ -1,0 +1,160 @@
+@use 'base';
+
+
+@media only screen and (max-width: 400px) {
+    body {
+        background-image:url("./../../images/bg-intro-mobile.png");
+        background-color:base.$red;
+    }
+
+    .container {
+        display:grid;
+        grid-gap:2rem;
+        max-width:400px;
+        grid-template-columns:1fr;
+        grid-template-rows:1fr;
+        justify-items:center;
+
+        form {
+            background-color:white;
+            width:100%;
+            text-align:center;
+            border-radius:.5rem;
+            padding:1rem 0;
+
+            div {
+                width:100%;
+            }
+            input {
+                margin:.5rem 0;
+                padding:1rem 0;
+                width:80%;
+                border-radius:.2rem;
+                border:1px solid hsl(0deg 0% 59%);
+            }
+            input[type="text"]::placeholder {
+                padding-left:1rem;
+                font-weight:bolder;
+            } 
+            input[type="value"] {
+                margin-left:1rem;
+            }
+            input[type="email"]::placeholder {
+                padding-left:1rem;
+                font-weight:bolder;
+            }
+            input[type="password"]::placeholder {
+                padding-left:1rem;
+                font-weight:bolder;
+            }
+            button {
+                width:80%;
+                margin:1rem 0;
+                padding:1.2rem 0;
+                background-color:base.$green;
+                border-radius:.2rem;
+                border:none;
+                letter-spacing:.1rem;
+            }
+            
+            p {
+                font-size:.6rem;
+                max-width:35ch;
+                margin:0 auto;
+                margin-bottom:1rem;
+                color:gray;
+            }
+        }
+    }
+    .trial-btn-section {
+        width:100%;
+    }
+    .free-trial-btn {
+        padding:1.5rem;
+        border-radius:.5rem;
+        background-color:base.$purple;
+        width:100%;
+        font-size:1.1rem;
+    }
+
+}
+
+
+@media only screen and (min-width: 401px) {
+    body {
+        background-image:url("./../../images/bg-intro-desktop.png");
+        background-color:base.$red;
+    }
+    .container {
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+        margin-top:10%;
+    }
+    .section {
+        display:grid;
+        grid-gap:1rem;
+        grid-template-columns:1fr;
+        width:510px;
+    }
+    form {
+        background-color:white;
+        width:100%;
+        text-align:center;
+        border-radius:.5rem;
+        padding:1rem 0;
+
+        div {
+            width:100%;
+        }
+        input {
+            margin:.5rem 0;
+            padding:1rem 0;
+            width:80%;
+            border-radius:.2rem;
+            border:1px solid hsl(0deg 0% 59%);
+        }
+        input[type="text"]::placeholder {
+            padding-left:1rem;
+            font-weight:bolder;
+        } 
+        input[type="value"] {
+            margin-left:1rem;
+        }
+        input[type="email"]::placeholder {
+            padding-left:1rem;
+            font-weight:bolder;
+        }
+        input[type="password"]::placeholder {
+            padding-left:1rem;
+            font-weight:bolder;
+        }
+        button {
+            width:80%;
+            margin:1rem 0;
+            padding:1.2rem 0;
+            background-color:base.$green;
+            border-radius:.2rem;
+            border:none;
+            letter-spacing:.1rem;
+        }
+        
+        p {
+            font-size:.6rem;
+            max-width:35ch;
+            margin:0 auto;
+            margin-bottom:1rem;
+            color:gray;
+        }
+    }
+        .trial-btn-section {
+            width:100%;
+        }
+        .free-trial-btn {
+            padding:1.5rem;
+            border-radius:.5rem;
+            background-color:base.$purple;
+            width:100%;
+            font-size:1.1rem;
+        }
+}

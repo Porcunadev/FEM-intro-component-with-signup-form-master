@@ -1,0 +1,180 @@
+html {
+  padding: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.white-text {
+  color: white;
+}
+
+.char-width {
+  max-width: 40ch;
+  text-align: center;
+}
+
+.line-height {
+  line-height: 1.4;
+}
+
+.box-shadow {
+  box-shadow: 0 10px 0 0 #dc6569;
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    background-image: url("./../../images/bg-intro-mobile.png");
+    background-color: #ff7a7a;
+  }
+
+  .container {
+    display: grid;
+    grid-gap: 2rem;
+    max-width: 400px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+  }
+  .container form {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    border-radius: 0.5rem;
+    padding: 1rem 0;
+  }
+  .container form div {
+    width: 100%;
+  }
+  .container form input {
+    margin: 0.5rem 0;
+    padding: 1rem 0;
+    width: 80%;
+    border-radius: 0.2rem;
+    border: 1px solid #969696;
+  }
+  .container form input[type=text]::placeholder {
+    padding-left: 1rem;
+    font-weight: bolder;
+  }
+  .container form input[type=value] {
+    margin-left: 1rem;
+  }
+  .container form input[type=email]::placeholder {
+    padding-left: 1rem;
+    font-weight: bolder;
+  }
+  .container form input[type=password]::placeholder {
+    padding-left: 1rem;
+    font-weight: bolder;
+  }
+  .container form button {
+    width: 80%;
+    margin: 1rem 0;
+    padding: 1.2rem 0;
+    background-color: #38cc8c;
+    border-radius: 0.2rem;
+    border: none;
+    letter-spacing: 0.1rem;
+  }
+  .container form p {
+    font-size: 0.6rem;
+    max-width: 35ch;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    color: gray;
+  }
+
+  .trial-btn-section {
+    width: 100%;
+  }
+
+  .free-trial-btn {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #5e55a5;
+    width: 100%;
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (min-width: 401px) {
+  body {
+    background-image: url("./../../images/bg-intro-desktop.png");
+    background-color: #ff7a7a;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10%;
+  }
+
+  .section {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+    width: 510px;
+  }
+
+  form {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    border-radius: 0.5rem;
+    padding: 1rem 0;
+  }
+  form div {
+    width: 100%;
+  }
+  form input {
+    margin: 0.5rem 0;
+    padding: 1rem 0;
+    width: 80%;
+    border-radius: 0.2rem;
+    border: 1px solid #969696;
+  }
+  form input[type=text]::placeholder {
+    padding-left: 1rem;
+    font-weight: bolder;
+  }
+  form input[type=value] {
+    margin-left: 1rem;
+  }
+  form input[type=email]::placeholder {
+    padding-left: 1rem;
+    font-weight: bolder;
+  }
+  form input[type=password]::placeholder {
+    padding-left: 1rem;
+    font-weight: bolder;
+  }
+  form button {
+    width: 80%;
+    margin: 1rem 0;
+    padding: 1.2rem 0;
+    background-color: #38cc8c;
+    border-radius: 0.2rem;
+    border: none;
+    letter-spacing: 0.1rem;
+  }
+  form p {
+    font-size: 0.6rem;
+    max-width: 35ch;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    color: gray;
+  }
+
+  .trial-btn-section {
+    width: 100%;
+  }
+
+  .free-trial-btn {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #5e55a5;
+    width: 100%;
+    font-size: 1.1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

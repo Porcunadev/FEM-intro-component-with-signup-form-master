@@ -1,0 +1,29 @@
+$red:hsl(0, 100%, 74%);
+$purple:hsl(247deg 32% 49%);
+$green:hsl(154, 59%, 51%);
+$gray:hsl(358deg 63% 63%);
+
+
+
+html{
+    padding:2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.white-text{
+    color:white;
+}
+
+.char-width{
+    max-width:40ch;
+    text-align:center;
+}
+
+.line-height{
+    line-height:1.4;
+}
+
+.box-shadow {
+    box-shadow: 0 10px 0 0 $gray;
+    
+}
